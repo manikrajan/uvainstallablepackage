@@ -21,5 +21,10 @@ def space_compress(stocomp):
     comp = re.sub(r'\s+', ' ', stocomp)
     return comp.strip()
 
+def space_compress(words):
+  assert type(words) is str, "Expected string but got {ty}".format(ty=type(words))  
+  cmpressed_string = " ".join(words.split())
+  return cmpressed_string
+
 def new_func():
     pass
