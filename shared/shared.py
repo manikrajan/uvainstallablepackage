@@ -15,12 +15,6 @@ def clean_string(str_word):
 
     return str_word.strip()
 
-import re
-def space_compress(stocomp):
-    assert isinstance(stocomp, str), "Expected str but got {} instead".format(type(stocomp))
-    comp = re.sub(r'\s+', ' ', stocomp)
-    return comp.strip()
-
 def space_compress(words):
   assert type(words) is str, "Expected string but got {ty}".format(ty=type(words))  
   cmpressed_string = " ".join(words.split())
